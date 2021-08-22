@@ -1,18 +1,19 @@
 @import "customMenu.less";
 
+// This can be used to have the menu bar stick below the header
+@sticky-offset: 0rem;
+
 @highlight-odd-ini_text: fade(@ini_background, 95%);
 @highlight-even-ini_text: fade(@ini_text, 5%);
+
+@border-radius: 6px;
+@border-style: 1px solid #ddd;
 
 .ProseMirror {
     padding: 4px 8px 4px 14px;
     white-space: pre-wrap;
-    background: repeating-linear-gradient(
-        -45deg,
-        @highlight-odd-ini_text,
-        @highlight-odd-ini_text 10px,
-        @highlight-even-ini_text 10px,
-        @highlight-even-ini_text 20px,
-    );
+	border-radius: @border-radius;
+	border: @border-style;
     outline: none;
     counter-reset: prosemirror-footnote;
 
@@ -82,14 +83,26 @@
     }
 }
 
+.prosemirror_wrapper {
+    position: relative;
+    display: block;
+    .menubar {
+        position: sticky;
+        top: @sticky-offset;
+	    border-radius: @border-radius;
+        border: @border-style;
+	    margin-bottom: 0.5rem;
+    }
+}
+
 .dokuwiki {
     .plugin_prosemirror_useWYSIWYG {
         position: absolute;
-        top: 55px;
-        right: 30px;
-        padding: 5px;
-        color: black;
-        background: yellow none;
+        top: 2.9em;
+	    right: 2em;
+        padding: 3px 8px;
+        background-color: white;
+        color: #444;
     }
 
     .footnote-tooltip {
@@ -161,4 +174,10 @@
     #link__wiz {
         z-index: 105; // set to what plugin edittable defines
     }
+}
+
+// Workaround for sticky menubar in argon
+main {
+    // Sticky elements can't have parents with overflow: hidden
+    overflow: unset !important;
 }
