@@ -6,4 +6,4 @@
  */
 
 // keys need to match the config setting name
-$lang['forceWYSIWYG'] = 'Erzwinge visuelle Bearbeitung für alle User außer Manager und Admins';
+$lang['forceWYSIWYG'] = 'Erzwinge visuelle Bearbeitung für alle Benutzer außer Manager und Admins';
