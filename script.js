@@ -25,7 +25,7 @@ function showProsemirror(json) {
         disableNativeFirefoxTableControls();
     } catch (e) {
         console.error(e);
-        let message = 'There was an error in the WYSIWYG editor. You will be redirected to the syntax editor in 5 seconds.';
+        let message = 'There was an error in the visual editor. You will be redirected to the syntax editor in 5 seconds.';
         if (window.SentryPlugin) {
             SentryPlugin.logSentryException(e, {
                 tags: {
@@ -55,7 +55,7 @@ function showProsemirror(json) {
         dw_locktimer.init(dw_locktimer.timeout/1000, dw_locktimer.draft, 'prosemirror__editor');
         dw_locktimer.addField('input[name=prosemirror_json]');
     } else {
-        console.warn('Draft saving in WYSIWYG is not available. Please upgrade your wiki to the current development snapshot.')
+        console.warn('Draft saving is not available in the visual editor. Please upgrade your wiki to the current development snapshot.')
     }
 }
 
