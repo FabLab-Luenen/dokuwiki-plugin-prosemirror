@@ -2,6 +2,6 @@ base   prosemirror
 author Andreas Gohr
 email  gohr@cosmocode.de
 date   2021-07-27
-name   prosemirror plugin
-desc   A WYSIWYG editor for DokuWiki
+name   Visual Editor
+desc   A ("what you see is what you get") editor for DokuWiki
 url    https://www.dokuwiki.org/plugin:prosemirror

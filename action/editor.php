@@ -71,7 +71,7 @@ class action_plugin_prosemirror_editor extends DokuWiki_Action_Plugin
             try {
                 $prosemirrorJSON = p_render('prosemirror', $instructions, $info);
             } catch (Throwable $e) {
-                $errorMsg = 'Rendering the page\'s syntax for the WYSIWYG editor failed: ' . $e->getMessage();
+                $errorMsg = 'Rendering the page\'s syntax for the visual editor failed: ' . $e->getMessage();
 
                 /** @var \helper_plugin_prosemirror $helper */
                 $helper = plugin_load('helper', 'prosemirror');
