@@ -3,5 +3,5 @@ author Andreas Gohr
 email  gohr@cosmocode.de
 date   2021-07-27
 name   Visual Editor
-desc   A ("what you see is what you get") editor for DokuWiki
+desc   "What you see is what you get" editor
 url    https://www.dokuwiki.org/plugin:prosemirror
