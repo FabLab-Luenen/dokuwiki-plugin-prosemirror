@@ -3,9 +3,10 @@ name: Deploy Release
 on:
     workflow_run:
         workflows: ["PHP Tests on Linux"]
-        branches: [master]
+        branches: [develop]
         types:
             - completed
+    workflow_dispatch:
 
 jobs:
     build-and-deploy:
