@@ -16,3 +16,4 @@ In case your theme has a fixed header, you can configure the toolbar to stick be
 	top: 5em; /* Height of your header */
 }
 ```
+
