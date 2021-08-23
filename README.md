@@ -1,6 +1,6 @@
 # Visual Editor for DokuWiki
 
-![Visual Editor logo. Graphic design is my passion. ](https://i.imgur.com/nBaAABv.png)
+![Visual Editor demonstration. Entering edit mode, scrolling down, changing a bit of formatting, saving](https://i.imgur.com/BggrlRZ.gif)
 
 Polished-up version of [cosmocode/dokuwiki-plugin-prosemirror](https://github.com/cosmocode/dokuwiki-plugin-prosemirror). 
 
