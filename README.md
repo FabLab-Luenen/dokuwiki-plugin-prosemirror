@@ -1,6 +1,6 @@
-![Visual Editor logo (graphic design is my passion)](https://i.imgur.com/T2Z4gKp.png)
-
 # Visual Editor for DokuWiki
+
+![Visual Editor logo (graphic design is my passion)](https://i.imgur.com/T2Z4gKp.png)
 
 Polished-up version of [cosmocode/dokuwiki-plugin-prosemirror](https://github.com/cosmocode/dokuwiki-plugin-prosemirror). 
 
