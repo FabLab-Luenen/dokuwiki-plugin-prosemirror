@@ -1,6 +1,6 @@
 <?php
 /**
- * English language file for prosemirror plugin
+ * German informal language file for prosemirror plugin
  *
  * @author Andreas Gohr <gohr@cosmocode.de>
  */
