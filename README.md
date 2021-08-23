@@ -8,6 +8,10 @@ The main aim of this fork is to make the editing experience as seamless as possi
 
 ![Visual Editor demonstration. Entering edit mode, scrolling down, changing a bit of formatting, saving](https://i.imgur.com/BggrlRZ.gif)
 
+## Installation
+
+Extension Manager -> Manual install with URL `https://github.com/fablab-luenen/dokuwiki-visual-editor/zipball/release` (or manually extract it into `/lib/plugins/prosemirror`). 
+
 ## Good to know
 
 In case your theme has a fixed header, you can configure the toolbar to stick below it while scrolling with the following CSS in userstyle.css:
