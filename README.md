@@ -12,7 +12,9 @@ The main aim of this fork is to make the editing experience as seamless as possi
 
 Extension Manager -> Manual install with URL `https://github.com/fablab-luenen/dokuwiki-visual-editor/zipball/release` (or manually extract it into `/lib/plugins/prosemirror`). 
 
-## Good to know
+## Tips and tricks
+
+### Fixed/Sticky header
 
 In case your theme has a fixed header, you can configure the toolbar to stick below it while scrolling with the following CSS in userstyle.css:
 
@@ -23,3 +25,8 @@ In case your theme has a fixed header, you can configure the toolbar to stick be
 }
 ```
 
+### Development
+
+Refer to the [original project](https://github.com/cosmocode/dokuwiki-plugin-prosemirror#architecture) for information about the architecture. 
+
+Also note that DokuWiki caches scripts. For changes to show up you can edit scripts.js or [disable caching](https://www.dokuwiki.org/devel:caching). 
