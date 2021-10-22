@@ -1,8 +1,9 @@
 import { keymap } from 'prosemirror-keymap';
-import { splitListItem } from 'prosemirror-schema-list';
+import { splitListItem, sinkListItem, liftListItem } from 'prosemirror-schema-list';
 import { baseKeymap, chainCommands } from 'prosemirror-commands';
 import { redo, undo } from 'prosemirror-history';
 import { save } from '../../customCommands';
+
 
 function getKeymapPlugin(schema) {
     // Mac OS has its own typical shortcuts
@@ -25,11 +26,17 @@ function getKeymapPlugin(schema) {
         historyKeymap['Mod-y'] = redo;
     }
 
+    const indentationKeymap = {
+        Tab: sinkListItem(schema.nodes.list_item),
+        'Shift-Tab': liftListItem(schema.nodes.list_item),
+    };
+
     const mergedKeymap = {
         ...baseKeymap,
         ...customKeymap,
         ...combinedKeymapUnion,
         ...historyKeymap,
+        ...indentationKeymap,
     };
 
     return keymap(mergedKeymap);
